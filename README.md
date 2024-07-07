@@ -19,7 +19,7 @@ Clone the repository:
 1. Clone the repository:
     ```sh
     git clone https://github.com/Piotray/italiana-webpage.git
-    cd wrong-math
+    cd italiana-webpage
     ```
 
 2. Install the dependencies:
