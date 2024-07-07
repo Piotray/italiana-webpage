@@ -1,0 +1,123 @@
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 3rem;
+  padding: 10px;
+  position: relative;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px;
+
+}
+
+.contact-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  text-align: center;
+}
+
+.contact-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contact-inputs {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-element {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.input-element.textarea {
+  height: 55px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.send-button,
+.new-message-button {
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid whitesmoke;
+  cursor: pointer;
+  font-size: medium;
+}
+
+.send-button:hover,
+.new-message-button:hover {
+  background-color: #343537;
+}
+
+.thank-you-message {
+  margin-top: 20px;
+  font-size: 18px;
+  color: rgb(199, 173, 3);
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  #contact-section {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .contact-form, .contact-image {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .contact-image {
+    order: 2; 
+  }
+
+  .contact-header {
+    margin-top: 20px;
+  }
+
+  .contact-inputs {
+    margin-top: 20px;
+  }
+}

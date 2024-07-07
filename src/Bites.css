@@ -1,0 +1,105 @@
+.bites-navbar {
+  background-color: #fff;
+  padding: 10px 20px;
+}
+
+.bites-nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.bites-nav-list li {
+  margin: 0;
+}
+
+.bites-nav-list a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.bites-nav-list a:hover {
+  color: #e63946;
+}
+
+.bites-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px 0;
+  margin-bottom: 40px;
+}
+
+.card {
+  width: 100%;
+  max-width: 30%;  
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #f9f9f9;
+  box-sizing: border-box;  
+}
+
+.card-image {
+  height: 200px;
+  width: 100%;  
+  object-fit: cover;  
+  border-radius: 5px;  
+}
+
+.card-header {
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #bb2c0a;
+  font-weight: bold;  
+}
+
+.card-text {
+  font-size: 1em;
+  color: #333;
+  word-wrap: break-word;  
+}
+
+.card-price {
+  font-size: 1.2em;
+  color: #bb2c0a;
+  margin-top: 5px;
+}
+
+.default-content {
+  text-align: center;
+  padding: 20px;
+}
+
+.default-content h2 {
+  background: rgb(30, 30, 30);
+  border-radius: 10px;
+  font-size: 2.2em;
+  letter-spacing: 0.3rem;
+  padding: 5px;
+}
+
+@media (max-width: 768px) {
+  .card {
+      width: 100%;  
+      max-width: 100%;  
+  }
+
+  .card-header {
+      font-size: 1.2em;  
+  }
+
+  .card-text {
+      font-size: 0.9em;  
+  }
+
+  .card-price {
+      font-size: 1em;  
+  }
+}

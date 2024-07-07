@@ -1,0 +1,52 @@
+.places-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+    padding: 10px;
+    background-color: #d6a401;
+    text-align: justify;
+    margin: 20px 0;
+    height: 400px;
+    position: relative;
+}
+
+.places-header {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.places-paragraph {
+    font-size: 22px;
+    margin-left: 40px;
+}
+
+.place-photo {
+    padding: 12px 12px 55px 12px;
+    background-color: whitesmoke;
+    height: 80%;
+    max-height: 350px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 2px;
+    box-shadow: 0px 0px 12px rgb(68, 66, 66);
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .places-container {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .places-paragraph {
+        margin-left: 0;
+        font-size: 18px;
+    }
+
+    .place-photo {
+        padding: 12px;
+        height: auto;
+        max-height: 300px;
+    }
+}

@@ -1,0 +1,63 @@
+.generaly {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  overflow: hidden; 
+  max-height: 500px;
+  position: relative; 
+}
+
+.generaly .slider {
+  white-space: nowrap;
+}
+
+
+.slider {
+  display: flex; 
+  animation: slide 8s infinite alternate linear; 
+  gap: 2rem; 
+}
+
+.slider img {
+  height: 400px; 
+  width: auto; 
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.word {
+  font-family: 'Averta', sans-serif;
+  position: absolute;
+  font-size: 225px;
+  font-weight: 900;
+  color: transparent; 
+  -webkit-text-stroke: 12px whitesmoke; 
+  letter-spacing: 1.5rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+
+  .word {
+    font-size: 120px;
+    -webkit-text-stroke: 6px whitesmoke;
+    letter-spacing: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .word {
+    font-size: 90px;
+    -webkit-text-stroke: 4px whitesmoke;
+    letter-spacing: 0.6rem;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

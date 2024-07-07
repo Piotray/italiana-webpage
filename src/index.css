@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+  font-family: 'Montserrat', 'Inter', system-ui, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: whitesmoke;
+  background-color: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-image: linear-gradient(to right, #bb2c0a, #a03d24);
+ 
+}
+
+.header {
+  background: rgb(30, 30, 30);
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.header .navigation ul {
+  list-style: none;
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav ul li a {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #about-section {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+
+  .hamburger {
+    display: flex;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .nav ul li a {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+}
