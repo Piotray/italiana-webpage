@@ -5,7 +5,7 @@ const Bites = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
   const pizzaItems = [
-    { id: 1, image: './assets/bites/pizza1.jpg', header: 'Pepperoni Pizza', text: 'Pepperoni, Salami, Mushrooms', price: '$10' },
+    { id: 1, image: '/assets/bites/pizza1.jpg', header: 'Pepperoni Pizza', text: 'Pepperoni, Salami, Mushrooms', price: '$10' },
     { id: 2, image: './assets/bites/pizza2.jpg', header: 'Carbonara Pizza', text: 'Bacon, Spinach, Feta Cheese', price: '$12' },
     { id: 3, image: '/assets/bites/pizza3.jpg', header: 'Capricciosa Pizza', text: 'Ham, Pineapple, Red Onions', price: '$12' },
   
