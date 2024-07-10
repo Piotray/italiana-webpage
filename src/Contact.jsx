@@ -3,16 +3,24 @@ import './Contact.css';
 
 const ContactForm = () => {
   const [send, setSend] = useState(false); 
-  const [showButton, setShowButton] = useState(false); 
-  
-  const handleSend = () => {
-    setSend(true); 
-    setShowButton(true); 
+  const [formData, setFormData] = useState({
+    name: '',
+    number: '',
+    message: ''
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
   };
 
-  const handleNewMessage = () => {
-    setSend(false); 
-    setShowButton(false); 
+  const handleSend = () => {
+    setSend(true);
+    setFormData({
+      name: '',
+      number: '',
+      message: ''
+    });
   };
 
   return (
@@ -23,17 +31,32 @@ const ContactForm = () => {
             Share your wishes
           </div>
           <div className='contact-inputs'>
-            <input type='text' className='input-element' placeholder='Name us' />
-            <input type='tel' className='input-element' placeholder='Your number?' />
-            <textarea className='input-element' placeholder='Order or share thoughts here' />
+            <input
+              type='text'
+              name='name'
+              className='input-element'
+              placeholder='Name us'
+              value={formData.name}
+              onChange={handleInputChange}
+            />
+            <input
+              type='tel'
+              name='number'
+              className='input-element'
+              placeholder='Your number?'
+              value={formData.number}
+              onChange={handleInputChange}
+            />
+            <textarea
+              name='message'
+              className='input-element'
+              placeholder='Order or share thoughts here'
+              value={formData.message}
+              onChange={handleInputChange}
+            />
           </div>
           <div className='button-container'>
             <button className='send-button' onClick={handleSend}>Send it</button>
-            {showButton && (
-              <button className='new-message-button' onClick={handleNewMessage}>
-                New message
-              </button>
-            )}
           </div>
           {send && (
             <div className='thank-you-message'>
