@@ -34,7 +34,6 @@ const ContactForm = () => {
               placeholder='Your number?' 
               pattern='[0-9]*' 
               inputMode='numeric' 
-              required 
               onChange={handleChange}
             />
             <textarea 
